@@ -245,6 +245,7 @@ h6 {
   padding-top: 50px;
   padding-bottom: 50px;
   margin-right: 20px;
+  gap: 50px;
 }
 
 #preview-shadow {
@@ -290,6 +291,26 @@ h6 {
 #corner-br {
   bottom: -5px;
   right: -5px;
+}
+
+#social-links {
+  margin: 0;
+  width: 230px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  background-color: var(--preview-shadow-color);
+}
+
+#social-links li {
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#social-links a {
+  color: var(--main-text);
 }
 
 .about-wrapper {
@@ -382,6 +403,12 @@ h6 {
   background-color: var(--button-color);
   border-radius: 5px;
   border: none;
+}
+
+#nav-footer {
+  width: 100%;
+  background-color: var(--main-color);
+  padding: 5px 0px;
 }
 
 @media screen and (max-width: 1200px) {
