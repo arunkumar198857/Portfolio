@@ -2,54 +2,201 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=   , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
-    <!-- BOX ICONS-->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <title>Resume | Arun Kumar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" href="" type="text/css">
+
+    <title>Portfolio | Arun Kumar</title>
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+    <section class="s1">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hi, I'm Arun Kumar</h1>
             </div>
 
-            <div>
-                <a href="#" class="nav__logo">Arun Kumar</a>
-            </div>
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
 
-            <div class="nav__menu" id="nav-menu">
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
+                    <div class="dots-wrapper">
+                        <div id="dot1" class="browser-dot"></div>
+                        <div id="dot2" class="browser-dot"></div>
+                        <div id="dot3" class="browser-dot"></div>
+                    </div>
+
+                    <ul id="navigation">
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
                 </div>
 
-                <ul class="nav__">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                    <li class="nav__item"><a href="#contactme" class="nav__link">Contact me</a></li>
-                </ul>
+                <div class="left-column">
+                    <img src="img/dp.jpg" id="profile-picture">
+                    <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>    
+                    <div id="theme-options-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                    </div>
+
+                    <p id="settings-note">*Theme settings will be saved for <br>
+                    your next visit</p>
+                </div>
                 
+                <div class="right-column">
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3>About me</h3>
+                            <p>Master of Computer Applications Student,
+                                looking for software development internship, full time roles.</p>
+                            <div id="corner-bl" class="corner"></div>
+                            <div id="corner-br" class="corner"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </section>
+    
+    <section class="s2">
+        <div class="main-container">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>Education</h4>
+                    <p>University School of Information, Communication <br>
+                        and Technology, Delhi - <i>Master of Computer <br>
+                            Applications. <b> <br> CGPA: 8.01/10 (2018 - 2021)</b></i>
+                    </p>
+                    <br>
+                    <p>Hansraj College, University of Delhi - <br>
+                        <i>Bachelor of Computer Science.<b> <br>
+                                CGPA: 7.12/10 (2015 - 2018)</b></i>
+                    </p>
+                    <br>
+                    <p>
+                        Andhra Education Society Sr Sec School, Delhi. <br>
+                        <b>12th: 87.5% CBSE (2015) <br>
+                            10th: 9.0/10 CBSE (2013)</b>
+                    </p>
+                </div>
+                <div class="social-links">
+                    <h4>Skills</h4>
+                    <p>Frontend developer with primary focus on React: <br>
+                        <a target="_blank" href="resume_Arun_Kumar.pdf">Download Resume</a>
+                    </p>
+                    
+                    <div class="social-links">
+                        <div id="skills">
+                            <ul>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Bootstrap</li>
+                                <li>JQuery</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <ul>
+                                <li>HTML/CSS</li>
+                                <li>Postgres</li>
+                                <li>Android</li>
+                                <li>Machine Learning</li>
+                                <li>Git</li>
+                                <li>DEF</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <main class = "l-main">
-    </main>
+    <section class="s1">
+        <div class="main-container">
+            <h3 style="text-align: center;">Some of my projects</h3>
+            <div class="post-wrapper">
 
-    <!-- Footer -->
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="img/blockchain.jpg" alt="#">
+                        <div class="post-preview">
+                            <h6 class="post-title">Elixir: A blockchain proof of concept</h6>
+                            <p class="post-intro">
+                                Implemented the proof of work of blockchain technology using java. Includes
+                                features like custom user input, dynamic updates on GUI. <br><br>
+                                <a href="#">Access the project here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="img/machine-learning.jpg" alt="#">
+                        <div class="post-preview">
+                            <h6 class="post-title">Prediction of Upvotes Using Machine Learning</h6>
+                            <p class="post-intro"> Predicted the number of Upvotes that a reddit post can
+                            get using ​Stochastic Gradient Descent and Random
+                            Forest Regression​ machine learning algorithms. <br><br>
+                            <a href="#">Access the project here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Main JS-->
-    <script src="assets/js/main.js"></script>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="img/atmsim.jpg" alt="#">
+                        <div class="post-preview">
+                            <h6 class="post-title">ATM Simulator</h6>
+                            <p class="post-intro"> Simulated the complete working of an ATM Machine
+                            using ​Java and JavaFX​. Includes feature like Account Creation, 
+                            Account Access, Deposit, Withdrawal. <br><br>
+                            <a href="#">Access the project here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+            <h3 style="text-align: center;">Get In Touch</h3>
+            <form action="" id="contact-form">
+
+                <label for="">Name</label>
+                <input type="text" class="input-field" name="name">
+
+                <label for="">Subject</label>
+                <input type="text" class="input-field" name="subject">
+
+                <label for="">Email</label>
+                <input type="text" class="input-field" name="email">
+
+                <label for="">Message</label>
+                <textarea name="message" class="input-field"></textarea>
+
+                <input type="submit" value="Send" id="submit-button">
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
