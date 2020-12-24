@@ -243,7 +243,8 @@ h6 {
   display: grid;
   align-content: center;
   padding-top: 50px;
-  padding-bottom: 75px;
+  padding-bottom: 50px;
+  margin-right: 20px;
 }
 
 #preview-shadow {
