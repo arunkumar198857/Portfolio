@@ -416,7 +416,7 @@ h6 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
   .intro-wrapper {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -427,5 +427,13 @@ h6 {
 
   .right-column {
     justify-content: center;
+  }
+
+  #preview-shadow {
+    padding-right: 5px;
+  }
+
+  #preview {
+    padding-right: 5px;
   }
 }
