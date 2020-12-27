@@ -301,15 +301,13 @@ h6 {
   background-color: var(--preview-shadow-color);
 }
 
-#social-links li {
-  text-align: center;
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 20px;
+#social-links {
+  display: flex;
+  justify-content: center;
 }
 
-#social-links a {
-  color: var(--main-text);
+#social-links li {
+  margin: 0 10px;
 }
 
 .about-wrapper {
@@ -430,7 +428,11 @@ h6 {
     width: 90%;
   }
 
-  #preview-shadow {
+  .right-column p {
+    font-size: 14px;
+  }
+
+  .right-column #preview-shadow {
     padding-right: 5px;
   }
 
