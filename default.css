@@ -423,6 +423,9 @@ h6 {
       "right-column";
   }
 
+  .about-wrapper {
+    gap: 50px;
+  }
   .right-column {
     justify-content: center;
     width: 90%;
