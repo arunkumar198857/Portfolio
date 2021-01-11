@@ -1,6 +1,8 @@
 # Portfolio
 This repository contains my portfolio website.
 
+It is made using HTML, CSS and JavaScript.
+
 Deployed @: https://arunkumar-portfolio.netlify.app/
 
 ![GitHub contributors](https://img.shields.io/github/contributors/arunkumar198857/Portfolio)
