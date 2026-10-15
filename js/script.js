@@ -1,37 +1,31 @@
-console.log('WORKING!!')
+const themeStyles = {
+  light: 'default.css',
+  blue: 'themes/blue.css',
+  green: 'themes/green.css',
+  purple: 'themes/purple.css',
+};
 
-let theme = localStorage.getItem('theme')
-if(theme == null){
-    setTheme('light')
-}else{
-    setTheme(theme)
-}
+const themeDots = document.querySelectorAll('.theme-dot');
+const savedTheme = localStorage.getItem('theme');
+const initialTheme = savedTheme && themeStyles[savedTheme] ? savedTheme : 'light';
 
-let themeDots = document.getElementsByClassName('theme-dot')
-for (var i = 0; i < themeDots.length; i++){
-    themeDots[i].addEventListener('click', function(){
-        let mode = this.dataset.mode
-        console.log('Option clicked!', mode)
-        setTheme(mode)
-    })
-}
+setTheme(initialTheme);
 
-function setTheme(mode){
-    if(mode == 'light'){
-        document.getElementById('theme-style').href = 'default.css'
-    }
+themeDots.forEach((button) => {
+  button.addEventListener('click', () => {
+    setTheme(button.dataset.mode);
+  });
+});
 
-    if(mode == 'blue'){
-        document.getElementById('theme-style').href = 'themes/blue.css'
-    }
+function setTheme(mode) {
+  const stylesheet = themeStyles[mode];
+  if (!stylesheet) {
+    return;
+  }
 
-    if(mode == 'green'){
-        document.getElementById('theme-style').href = 'themes/green.css'
-    }
-
-    if(mode == 'purple'){
-        document.getElementById('theme-style').href = 'themes/purple.css'
-    }
-
-    localStorage.setItem('theme', mode)
+  document.getElementById('theme-style').href = stylesheet;
+  themeDots.forEach((button) => {
+    button.setAttribute('aria-pressed', String(button.dataset.mode === mode));
+  });
+  localStorage.setItem('theme', mode);
 }
